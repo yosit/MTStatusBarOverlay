@@ -116,7 +116,8 @@ typedef enum MTMessageType {
 @property (nonatomic, copy) NSString *detailText;
 // the delegate of the overlay
 @property (nonatomic, unsafe_unretained) id<MTStatusBarOverlayDelegate> delegate;
-
+// default is what the app sets
+@property(nonatomic) UIStatusBarStyle statusBarStyle;
 
 //===========================================================
 #pragma mark -
